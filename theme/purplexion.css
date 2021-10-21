@@ -1,0 +1,335 @@
+/* Extra CSS for purplexion style */
+
+/* fonts */
+
+/* source-sans-pro-regular - latin_vietnamese_greek_greek-ext_latin-ext_cyrillic_cyrillic-ext */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/source-sans-pro-v11-latin_vietnamese_greek_greek-ext_latin-ext_cyrillic_cyrillic-ext-regular.eot'); /* IE9 Compat Modes */
+  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'),
+       url('fonts/source-sans-pro-v11-latin_vietnamese_greek_greek-ext_latin-ext_cyrillic_cyrillic-ext-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/source-sans-pro-v11-latin_vietnamese_greek_greek-ext_latin-ext_cyrillic_cyrillic-ext-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/source-sans-pro-v11-latin_vietnamese_greek_greek-ext_latin-ext_cyrillic_cyrillic-ext-regular.woff') format('woff'), /* Modern Browsers */
+       url('fonts/source-sans-pro-v11-latin_vietnamese_greek_greek-ext_latin-ext_cyrillic_cyrillic-ext-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('fonts/source-sans-pro-v11-latin_vietnamese_greek_greek-ext_latin-ext_cyrillic_cyrillic-ext-regular.svg#SourceSansPro') format('svg'); /* Legacy iOS */
+}
+/* source-sans-pro-italic - latin_vietnamese_greek_greek-ext_latin-ext_cyrillic_cyrillic-ext */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: italic;
+  font-weight: 400;
+  src: url('fonts/source-sans-pro-v11-latin_vietnamese_greek_greek-ext_latin-ext_cyrillic_cyrillic-ext-italic.eot'); /* IE9 Compat Modes */
+  src: local('Source Sans Pro Italic'), local('SourceSansPro-Italic'),
+       url('fonts/source-sans-pro-v11-latin_vietnamese_greek_greek-ext_latin-ext_cyrillic_cyrillic-ext-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/source-sans-pro-v11-latin_vietnamese_greek_greek-ext_latin-ext_cyrillic_cyrillic-ext-italic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/source-sans-pro-v11-latin_vietnamese_greek_greek-ext_latin-ext_cyrillic_cyrillic-ext-italic.woff') format('woff'), /* Modern Browsers */
+       url('fonts/source-sans-pro-v11-latin_vietnamese_greek_greek-ext_latin-ext_cyrillic_cyrillic-ext-italic.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('fonts/source-sans-pro-v11-latin_vietnamese_greek_greek-ext_latin-ext_cyrillic_cyrillic-ext-italic.svg#SourceSansPro') format('svg'); /* Legacy iOS */
+}
+/* source-sans-pro-700 - latin_vietnamese_greek_greek-ext_latin-ext_cyrillic_cyrillic-ext */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: url('fonts/source-sans-pro-v11-latin_vietnamese_greek_greek-ext_latin-ext_cyrillic_cyrillic-ext-700.eot'); /* IE9 Compat Modes */
+  src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'),
+       url('fonts/source-sans-pro-v11-latin_vietnamese_greek_greek-ext_latin-ext_cyrillic_cyrillic-ext-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/source-sans-pro-v11-latin_vietnamese_greek_greek-ext_latin-ext_cyrillic_cyrillic-ext-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/source-sans-pro-v11-latin_vietnamese_greek_greek-ext_latin-ext_cyrillic_cyrillic-ext-700.woff') format('woff'), /* Modern Browsers */
+       url('fonts/source-sans-pro-v11-latin_vietnamese_greek_greek-ext_latin-ext_cyrillic_cyrillic-ext-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('fonts/source-sans-pro-v11-latin_vietnamese_greek_greek-ext_latin-ext_cyrillic_cyrillic-ext-700.svg#SourceSansPro') format('svg'); /* Legacy iOS */
+}
+/* source-sans-pro-700italic - latin_vietnamese_greek_greek-ext_latin-ext_cyrillic_cyrillic-ext */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: italic;
+  font-weight: 700;
+  src: url('fonts/source-sans-pro-v11-latin_vietnamese_greek_greek-ext_latin-ext_cyrillic_cyrillic-ext-700italic.eot'); /* IE9 Compat Modes */
+  src: local('Source Sans Pro Bold Italic'), local('SourceSansPro-BoldItalic'),
+       url('fonts/source-sans-pro-v11-latin_vietnamese_greek_greek-ext_latin-ext_cyrillic_cyrillic-ext-700italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/source-sans-pro-v11-latin_vietnamese_greek_greek-ext_latin-ext_cyrillic_cyrillic-ext-700italic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/source-sans-pro-v11-latin_vietnamese_greek_greek-ext_latin-ext_cyrillic_cyrillic-ext-700italic.woff') format('woff'), /* Modern Browsers */
+       url('fonts/source-sans-pro-v11-latin_vietnamese_greek_greek-ext_latin-ext_cyrillic_cyrillic-ext-700italic.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('fonts/source-sans-pro-v11-latin_vietnamese_greek_greek-ext_latin-ext_cyrillic_cyrillic-ext-700italic.svg#SourceSansPro') format('svg'); /* Legacy iOS */
+}
+
+*{
+	font-size:101%;
+}
+
+a, .dropdown-extended ul li {
+	-webkit-transition: all .5s ease, height 1ms linear;
+	-moz-transition: all .5s ease, height 1ms linear;
+	-ms-transition: all .5s ease, height 1ms linear;
+	-o-transition: all .5s ease, height 1ms linear;
+	transition: all .5s ease, height 1ms linear;
+}
+
+.dropdown .pointer-inner, .dropdown div, .dropdown ul {
+    display: block;
+    animation: fadeIn 500ms linear 0s 1 normal forwards;
+}
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+/* remove annoying yellow background in auto fill fields in Chrome */
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px #0f0f0f inset;
+	-webkit-text-fill-color: #eeeeee;
+}
+
+.purplexion-hide {
+	visibility:hidden;
+}
+
+.inline-attachment {
+	padding:10px 0;
+}
+
+a {
+	outline:none;
+}
+
+.navbar a {
+	color:#ffffff;
+}
+
+.navbar a:hover, .navbar a:focus {
+	color:#6c6bb1;
+	text-decoration:none;
+}
+
+.purplexion-navbar-top, .purplexion-navbar-bottom {
+	background:rgba(0,0,0,0.35);
+	height:38px;
+}
+
+.purplexion-navbar-bottom {
+	display:inline-block;
+	float:right;
+}
+
+.purplexion-navbar-top li, .purplexion-navbar-bottom li {
+	padding-right:20px;
+}
+
+.purplexion-navbar-top li.rightside {
+	padding-right:0;
+}
+
+.dropdown li {
+	padding-right:0;
+}
+
+.notification_block a {
+	color:#6c6bb1;
+}
+
+.purplexion-breadcrumbs {
+	color:#cccccc;
+	border:1px solid #101010;
+	box-shadow: 0 0 1px 1px #262626 inset;
+	padding:0 10px;
+}
+
+.crumb a {
+	color:#cccccc;
+	font-weight:normal;
+}
+
+li.header {
+	padding:10px 5px;
+	background:#181818 url(images/thead.png);
+	background-size:cover;
+}
+
+h2.forum-title, h2.topic-title, h2.posting-title {
+	color:#dddddd;
+	font-size:1.2em;
+	text-transform:uppercase;
+	font-weight:bold;
+	padding:13px 5px;
+	border:1px solid #101010;
+	background:#181818 url(images/thead.png);
+	background-size:cover;
+}
+
+h2.forum-title a {
+	color:#dddddd;
+}
+
+h2.forum-title a:hover {
+	color:#ffffff;
+}
+
+.purplexion-stats {
+	padding:0 10px;
+}
+
+.purplexion-who-browsing {
+	padding:10px;
+}
+
+.index-right .pagination {
+	float:none;
+	text-align:center;
+}
+
+.jumpbox .button-secondary {
+	color:#8b91e8;
+}
+
+.jumpbox .button-secondary:hover, .jumpbox .button-secondary:focus {
+	color:#d67c86;
+}
+
+.online {
+	background-image:none !important;
+	border-right:5px solid #244427;
+}
+
+.alert_text h3 {
+	color:#ffffff;
+	border-bottom-color:#cccccc;
+}
+
+/* Responsive */
+
+@media (max-width:1024px) {
+	.index-right {
+		max-height:370px;
+		overflow:hidden;
+	}
+}
+
+@media (max-width: 1000px) {
+	.site_logo {
+		background-image: url(images/site_logo_med.png);
+		width:550px;
+		height:112px;
+	}
+}
+
+@media (max-width: 700px) {
+	.site_logo {
+		margin-left:5px;
+	}
+	.search-header {
+		display:none !important;
+	}
+	.index-right {
+		display:none !important;
+	}
+
+}
+
+@media (max-width: 570px) {
+	.logo {
+		padding:0px;
+		display:block;
+	}
+	.site_logo {
+		background-image: url(images/site_logo_small.png);
+		height:61px;
+		width:300px;
+		margin:16px 0 8px 5px;
+		display:inline-block
+	}
+	.navbar {
+		padding:0 10px;
+	}
+}
+
+/* Extension styling and compatibility */
+
+/* Board announcement... */
+#phpbb_announcement {
+	border-radius:0 !important;
+	background: #232323 !important;
+    border: 1px solid #0d0d0d;
+    box-shadow: 0 0 1px 1px #2a2a2a inset;
+    color: #ffffff;
+	font-size:1.6em !important;
+	text-align:center;
+	border:none;
+}
+
+#phpbb_announcement a {
+	color:#ffffff;
+	border:none;
+	text-decoration:underline;
+}
+
+#phpbb_announcement a:hover {
+	color:#7a4e71;
+	background:transparent;
+}
+
+#phpbb_announcement .close {
+	background: transparent url(images/close.png) no-repeat !important;
+}
+
+/* collapsable categories... */
+.collapse-btn::after, .collapse-btn::before {
+	border-color:#6c6bb1 !important;
+}
+
+.collapse-btn {
+	background-color:#181818 !important;
+	border-color:#272727 !important;
+}
+
+.collapse-btn:hover {
+	background-color:#313131 !important;
+}
+
+.collapse-hide, .collapse-show {
+	border-radius:0 !important;
+}
+
+/* Recent topics... */
+#recent-topics li.row {
+	border-top:1px solid #101010 !important;
+	border-bottom:1px solid #272727 !important;
+}
+
+#recent-topics a.forum-link {
+	color:#7a4e71 !important;
+	font-size:11px;
+}
+
+#recent-topics a.forum-link:hover {
+	text-decoration:underline;
+}
+
+/* mChat... */
+.mchat-wrapper {
+	background:transparent;
+}
+
+#mchat-panel.cp-mini {
+	margin-top:7px;
+	background:#181818;
+}
+
+.mchat-footer li::before {
+	content:'' !important;
+}
+
+.mchat-confirm-fields textarea {
+	background:#0f0f0f;
+	border:1px solid #272727;
+}
+
+.mchat-wrapper .mchat-buttons > li {
+	padding:0px !important;
+}
+
+.mchat-static, .mchat-message-header, .mchat-text {
+	font-size:1.3em !important;
+}
+
+.mchat-text {
+	color:#eeeeee;
+}
