@@ -5,7 +5,7 @@ Colours and backgrounds for common.css
 
 body {
 	color: #cccccc;
-	background: #171b1d url(images/bg.jpg) no-repeat center top;
+	background: #171b1d url(images/bg.png) no-repeat center top;
 	background-size:cover;
 	background-attachment:fixed;
 }
