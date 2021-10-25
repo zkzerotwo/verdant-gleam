@@ -34,10 +34,10 @@ Colours and backgrounds for links.css
 -------------------------------------------------------------- */
 
 a {
-	color: #8b91e8;
+	color: #04BF9D;
 }
 
-a:hover, a:focus { color: #d67c86; }
+a:hover, a:focus { color: #D5F2EF; }
 
 /* Links on gradient backgrounds */
 .forumbg .header a, .forabg .header a, th a {
@@ -55,15 +55,15 @@ a:hover, a:focus { color: #d67c86; }
 
 /* Post body links */
 .postlink {
-	color: #8b91e8;
+	color: #04BF9D;
 }
 
 .postlink:visited {
-	color: #8b91e8;
+	color: #04BF9D;
 }
 
 .postlink:hover {
-	color: #d67c86;
+	color: #D5F2EF;
 	text-decoration:underline;
 }
 
@@ -78,7 +78,7 @@ a:hover, a:focus { color: #d67c86; }
 
 /* Arrow links  */
 .arrow-left:hover, .arrow-right:hover {
-	color: #d67c86;
+	color: #D5F2EF;
 }
 
 /* Round cornered boxes and backgrounds
@@ -593,7 +593,7 @@ Colours and backgrounds for buttons.css
 
 .pagination li a:hover, .pagination li a:hover .icon, .pagination .dropdown-visible a.dropdown-trigger, .nojs .pagination .dropdown-container:hover a.dropdown-trigger {
 	background: #252525;
-	border-color: #d67c86;
+	border-color: #D5F2EF;
 	filter: none;
 	color: #FFFFFF;
 	text-shadow: none;
